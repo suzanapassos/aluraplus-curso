@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --botao-azul-efeito: #71b1ff;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: "Inter", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.principal {
+    background-image: url("assets/background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__caixa {
+    margin: 0 6em;
+}
+
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0;
+}
+
+.container__botao {
+    background-color: var(--botao-azul);
+    border-radius: 8px;
+    padding: 1em;
+    color: var(--branco-principal);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 1em;
+}
+
+.container__botao:hover{
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-de-fundo);
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 1px solid var(--branco-principal);
+}
+
+.container__aviso {
+    font-size: 12px;
+    color: var(--cinza-secundario);
+}
+
+/* SEGUNDO CONTAINER/SECTION */
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+.secundario__imagem {
+    width: 80%;
+}
+
+.secundario__descricao__titulo {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 0.2em;
+}
+
+.secundario__descricao__texto{
+    color: var(--cinza-secundario);
+}
+
+.secundario__descricao {
+    padding: 2em;
+}
+
+/* TERCEIRO CONTAINER/SECTION */
+
+.terciario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+/* QUARTO CONTAINER / SEÇÃO DOS DISPOSITIVOS */
+
+.dispositivos {
+    /* display: flex; ---- fiz com flexbox e funcionou. 
+    flex-direction: column; 
+    align-items: center; ---- achei que preicsaria centralizar todo o conteudo
+    justify-content: center; 
+    height: 100vh; ---- e criar do tamanho da viewport */
+    text-align: center;
+}
+
+.dispositivos__titulo {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.dispositivos__lista__item {
+    padding: 0 2em;
+}
+
+.dispositivos__lista__descricao {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 0.5em;
+}
+
+/* FOOTER */
+
+.rodape {
+    text-align: center;
+    padding: 6em;
+}
+
+.rodape__links{
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    margin-top: 2em;
+}
+
+.rodape__links__item {
+    text-decoration: none;
+    color: var(--branco-principal);
+    font-weight: 400;
+}
+
+.rodape__links__item:hover{
+    color: var(--botao-azul);
+}
+
+.rodape__texto {
+    font-size: 14px;
+    color: var(--cinza-secundario);
+    padding: 1em;
+}
