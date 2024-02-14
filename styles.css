@@ -168,3 +168,59 @@ body{
     color: var(--cinza-secundario);
     padding: 1em;
 }
+
+/* RESPONSIVIDADE */
+
+
+@media screen and (max-width:768px) {
+
+    .principal{
+        margin-top: 5em;
+    }
+    .container{
+        display: block;
+        background-image: none;
+    }
+
+    .container__imagem {
+        width: 50vw;
+    }
+    
+    .container__caixa {
+        margin: 2em 2em;
+    }
+    
+    .secundario {
+        margin: 0;
+        text-align: center;
+    }
+
+    .secundario__imagem {
+        width: 50vw;
+    }
+
+    .secundario__descricao__titulo {
+        font-size: 2rem;
+    }
+
+    .dispositivos__lista {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dispositivos__lista__descricao {
+        font-size: 1em;
+    }
+
+    .dispositivos__titulo {
+        font-size: 2rem;
+    }
+
+    .rodape {
+        padding: 1em;
+    }
+
+    .rodape__links {
+        flex-direction: column;
+    }
+}
